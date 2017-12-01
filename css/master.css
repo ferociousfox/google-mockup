@@ -36,6 +36,9 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+.the-small {
+  display: none;
+}
 body {
   background: #efefef;
 }
@@ -53,10 +56,6 @@ img {
   border-radius: none;
   border: none;
 }
-.card img {
-  
-}
-
 .card-text {
   text-align: center;
 }
@@ -65,7 +64,31 @@ img {
   .the-medium {
     display: none;
   }
+  .the-small {
+    display: block;
+  }
+  .pseudo-card {
+    margin: 17px 17px 0px 17px;
+    background: white;
+  }
+  .pseudo-card img {
+    float: left;
+    max-width: 180px;
+    margin: 11px;
+  }
+  .pseudo-card p {
+    display: block;
+    margin: 15px 0 0 195px;
+  }
+  .bottom-hero {
+    margin-top: 17px;
+  }
 }
-@media screen and (min width 1000px) {
-
+@media screen and (min-width: 1000px) {
+  .the-small {
+    display: none;
+  }
+  .the-medium {
+    display: none;
+  }
 }
