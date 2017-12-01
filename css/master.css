@@ -39,14 +39,16 @@ time, mark, audio, video {
 .the-small {
   display: none;
 }
+.the-large {
+  display: none
+}
 body {
   background: #efefef;
 }
 img {
   width: 100%;
   overflow: auto;
-  height: auto;
-  display: flex;
+  object-fit: cover;
 }
 .card {
   margin: 5% 0;
@@ -90,5 +92,19 @@ img {
   }
   .the-medium {
     display: none;
+  }
+  .the-large {
+    display: block;
+  }
+  .img-text {
+    margin-top: 8px;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 59, 0, 0.5);
+    border-radius: 10px;
+  }
+  .card-inverse {
+    margin-top: 12px;
   }
 }
